@@ -1,7 +1,7 @@
 import { ArrayOfNumbers } from './interfaces';
 import bobbleSort from './bobbleSort';
 import selectionSort from './selectionSort';
-/*import joinSort from './joinSort';*/
+import joinSort from './joinSort';
 
 const sorting = () => {
   const testArray: ArrayOfNumbers = Array.from(Array(100_000).keys()).reverse();
@@ -18,10 +18,10 @@ const sorting = () => {
   console.log(select);
 
 
-/*  console.time('join');
+  console.time('join');
   const join = joinSort(testArray);
   console.timeEnd('join');
-  console.log(join);*/
+  console.log(join);
 };
 
 export default sorting;
